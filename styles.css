@@ -1,3 +1,5 @@
+/* ===== CSS VARIABLES ===== */
+/* Define color scheme and design tokens for the major project page */
 :root {
   --color-background: #e8d4fe;
   --color-card: #c089fb;
@@ -5,6 +7,8 @@
   --color-text: #000000;
 }
 
+/* ===== GLOBAL RESETS & BASE STYLES ===== */
+/* Reset default browser styles and set base font */
 * {
   box-sizing: border-box;
 }
@@ -16,7 +20,8 @@ body {
   color: var(--color-text);
 }
 
-/* CSS for section section:main */
+/* ===== MAIN PROJECT CONTAINER ===== */
+/* Container for the entire project page with max-width constraint */
 .project-container {
     max-width: 1440px;
     margin: 0 auto;
@@ -24,48 +29,56 @@ body {
     overflow: hidden;
   }
 
-  .background-decor {
+/* ===== BACKGROUND DECORATIONS ===== */
+/* Container for decorative background shapes */
+.background-decor {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 0;
+    z-index: 0; /* Behind all content */
     overflow: hidden;
   }
 
-  .background-decor img {
+/* Base styles for all background shape images */
+.background-decor img {
     position: absolute;
-    pointer-events: none;
+    pointer-events: none; /* Prevent interaction with decorative elements */
   }
 
-  .bg-shape-1 {
+/* Position individual background shapes */
+.bg-shape-1 {
     top: -22px;
     left: 38px;
   }
 
-  .bg-shape-2 {
+.bg-shape-2 {
     top: 705px;
     left: 895px;
   }
 
-  .bg-shape-3 {
+.bg-shape-3 {
     top: 1480px;
     left: 0;
   }
 
-  .content-wrapper {
+/* ===== MAIN CONTENT WRAPPER ===== */
+/* Container for all page content that sits above background */
+.content-wrapper {
     position: relative;
-    z-index: 1;
+    z-index: 1; /* Above background decorations */
     padding: 40px 20px;
   }
 
-  .project-header {
+/* ===== PROJECT HEADER ===== */
+/* Page header with main title */
+.project-header {
     text-align: center;
     margin-bottom: 60px;
   }
 
-  .main-title {
+.main-title {
     font-weight: 900;
     font-size: 64px;
     line-height: 1.2;
@@ -73,52 +86,63 @@ body {
     color: var(--color-text);
   }
 
-  .project-grid {
+/* ===== PROJECT GRID LAYOUT ===== */
+/* Main grid container for project content */
+.project-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
   }
 
-  .grid-column-left,
-  .grid-column-right {
+/* Left and right column containers */
+.grid-column-left,
+.grid-column-right {
     display: flex;
     flex-direction: column;
     gap: 40px;
   }
 
-  .info-card {
+/* ===== INFO CARDS ===== */
+/* Styled containers for project information with angled corners */
+.info-card {
     background-color: var(--color-card);
     border: 5px solid var(--color-card-border);
-    border-radius: 50px 0px 50px 0px;
+    border-radius: 50px 0px 50px 0px; /* Angled corner effect */
     padding: 34px 26px;
     font-size: 24px;
     line-height: 1.5;
   }
 
-  .info-card p {
+.info-card p {
     margin: 0;
   }
 
-  .small-text {
+/* Text size variations */
+.small-text {
     font-size: 20px;
   }
 
-  .card-title-large {
+/* Card title sizes */
+.card-title-large {
     font-size: 24px;
     font-weight: 700;
     margin: 0 0 10px 0;
   }
   
-  .card-title-small {
+.card-title-small {
     font-size: 20px;
     margin: 0 0 10px 0;
   }
 
-  .font-bold { font-weight: 700; }
-  .font-medium { font-weight: 500; }
-  .font-semibold { font-weight: 600; }
+/* ===== TYPOGRAPHY UTILITY CLASSES ===== */
+/* Font weight helper classes */
+.font-bold { font-weight: 700; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
 
-  .workshop-photo {
+/* ===== WORKSHOP PHOTO ===== */
+/* Styled image container with border */
+.workshop-photo {
     width: 100%;
     max-width: 556px;
     height: auto;
@@ -128,7 +152,9 @@ body {
     align-self: flex-start;
   }
 
-  .app-gallery {
+/* ===== APP GALLERY ===== */
+/* Container for app screenshot mosaic layout */
+.app-gallery {
     position: relative;
     width: 100%;
     max-width: 529px;
@@ -136,19 +162,22 @@ body {
     margin: 0 auto;
   }
 
-  .app-gallery img {
+/* Individual app screenshots - positioned absolutely for desktop mosaic */
+.app-gallery img {
     position: absolute;
     max-width: 100px;
     height: auto;
-    display: none; /* Hidden by default, shown on desktop */
+    display: none; /* Hidden by default, shown on desktop via media queries */
   }
 
-  .project-footer {
+/* ===== PROJECT FOOTER ===== */
+/* Footer section with back navigation */
+.project-footer {
     text-align: center;
     margin-top: 80px;
   }
 
-  .back-link {
+.back-link {
     display: inline-block;
     border: 1px solid var(--color-text);
     padding: 10px 20px;
@@ -159,37 +188,41 @@ body {
     transition: background-color 0.3s, color 0.3s;
   }
 
-  .back-link:hover {
+.back-link:hover {
     background-color: var(--color-text);
     color: white;
   }
 
-  /* Tablet and Desktop Styles */
-  @media (min-width: 768px) {
+/* ===== TABLET AND DESKTOP STYLES (768px and up) ===== */
+@media (min-width: 768px) {
     .content-wrapper {
       padding: 60px 80px;
     }
 
+    /* Switch to two-column layout */
     .project-grid {
       grid-template-columns: 1fr 1fr;
       gap: 0 40px;
       align-items: start;
     }
     
+    /* Offset right column for visual interest */
     .grid-column-right {
         margin-top: 100px;
     }
 
+    /* Show absolutely positioned app screenshots */
     .app-gallery img {
-        display: block; /* Show images on desktop */
+        display: block;
     }
   }
 
-  /* Large Desktop Styles */
-  @media (min-width: 1200px) {
+/* ===== LARGE DESKTOP STYLES (1200px and up) ===== */
+@media (min-width: 1200px) {
     .project-grid {
       gap: 0 80px;
     }
+    /* Remove offset and apply vertical translation for staggered effect */
     .grid-column-right {
         margin-top: 0;
         transform: translateY(-60px);
@@ -199,8 +232,9 @@ body {
     }
   }
 
-  /* Mobile-specific adjustments */
-  @media (max-width: 767px) {
+/* ===== MOBILE-SPECIFIC STYLES (767px and down) ===== */
+@media (max-width: 767px) {
+    /* Adjust typography for smaller screens */
     .main-title {
       font-size: 48px;
     }
@@ -216,6 +250,8 @@ body {
     .back-link {
       font-size: 18px;
     }
+    
+    /* Convert app gallery from absolute positioning to grid layout */
     .app-gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));

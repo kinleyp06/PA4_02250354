@@ -1,30 +1,43 @@
+/* ===== CSS VARIABLES & GLOBAL STYLES ===== */
+
+/* Define color palette, typography and design tokens */
 :root {
+  /* Primary color palette */
   --color-primary: #c589fb;
   --color-primary-dark: #6b4099;
   --color-primary-light: #ebd9ff;
   --color-primary-bg: rgba(152, 62, 248, 0.23);
   --color-secondary-bg: #e8d4fe;
+  
+  /* Text colors */
   --color-text-dark: #2d3748;
   --color-text-light: #718096;
   --color-text-black: #000000;
   --color-white: #ffffff;
+  
+  /* Gradient definitions */
   --gradient-primary: linear-gradient(90deg, #4a54e6 0%, #9d6bff 100%);
   --gradient-heading: linear-gradient(53deg, #c089fb 0%, #6b4099 62.39%, #000000 124.78%);
+  
+  /* Typography */
   --font-heading: 'Poppins', sans-serif;
   --font-body: 'Inter', sans-serif;
   --font-logo: 'Coiny', sans-serif;
 }
 
+/* Reset default browser styles */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Smooth scrolling for anchor links */
 html {
   scroll-behavior: smooth;
 }
 
+/* Base body styles */
 body {
   font-family: var(--font-body);
   background-color: var(--color-white);
@@ -32,12 +45,14 @@ body {
   overflow-x: hidden;
 }
 
+/* Main layout wrapper */
 .page-wrapper {
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
 }
 
+/* Container for consistent content width */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -45,16 +60,19 @@ body {
   padding: 0 20px;
 }
 
+/* Section base styles */
 section {
   padding: 80px 0;
   position: relative;
   overflow: hidden;
 }
 
+/* Typography hierarchy */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
 }
 
+/* Main heading with gradient text effect */
 h1 {
   font-size: 64px;
   font-weight: 900;
@@ -63,9 +81,9 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
+/* Section headings */
 h2 {
   font-size: 64px;
   font-weight: 900;
@@ -74,6 +92,7 @@ h2 {
   margin-bottom: 16px;
 }
 
+/* Paragraph base styles */
 p {
   font-size: 24px;
   font-weight: 300;
@@ -81,11 +100,15 @@ p {
   text-align: center;
 }
 
+/* Link base styles */
 a {
   text-decoration: none;
   color: inherit;
 }
 
+/* ===== BUTTON COMPONENTS ===== */
+
+/* Base button styles */
 .btn {
   display: inline-flex;
   justify-content: center;
@@ -100,24 +123,29 @@ a {
   transition: all 0.3s ease;
 }
 
+/* Primary button variant */
 .btn-primary {
   background-color: var(--color-primary-bg);
 }
 
+/* Secondary button variant */
 .btn-secondary {
   background-color: var(--color-secondary-bg);
 }
 
+/* Outline button variant */
 .btn-outline {
   background-color: var(--color-white);
   border: 2px solid var(--color-text-black);
 }
 
+/* Button hover effects */
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+/* Section subtitle styling */
 .section-subtitle {
     font-size: 24px;
     font-weight: 400;
@@ -128,6 +156,7 @@ a {
     margin: 0 auto 40px;
 }
 
+/* Background decoration elements */
 .decor-bg {
     position: absolute;
     top: 0;
@@ -142,6 +171,9 @@ a {
     position: absolute;
 }
 
+/* ===== RESPONSIVE BREAKPOINTS ===== */
+
+/* Mobile and tablet styles */
 @media (max-width: 768px) {
   h1, h2 {
     font-size: 48px;
@@ -158,21 +190,26 @@ a {
   }
 }
 
+/* ===== HEADER & NAVIGATION ===== */
 
 .site-header {
   padding: 20px 0;
   position: sticky;
   top: 0;
   background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); /* Frosted glass effect */
   z-index: 100;
   width: 100%;
 }
+
+/* Header layout container */
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+/* Logo styling with decorative background */
 .logo {
   position: relative;
   width: 80px;
@@ -181,6 +218,8 @@ a {
   justify-content: center;
   align-items: center;
 }
+
+/* Circular logo background */
 .logo-bg {
   position: absolute;
   top: 0;
@@ -190,25 +229,33 @@ a {
   background-color: black;
   border: 8px solid var(--color-primary);
   border-radius: 50%;
-  transform: rotate(-15deg);
+  transform: rotate(-15deg); /* Dynamic angled effect */
 }
+
+/* Logo text styling */
 .logo-text {
   position: relative;
   font-family: var(--font-logo);
   font-size: 28px;
   color: var(--color-white);
-  -webkit-text-stroke: 1px #3c3c3c;
+  -webkit-text-stroke: 1px #3c3c3c; /* Text border effect */
 }
+
+/* Main navigation container */
 .main-nav {
   background-color: var(--color-primary);
   border-radius: 40px;
   padding: 0 20px;
 }
+
+/* Navigation list layout */
 .main-nav ul {
   display: flex;
   list-style: none;
   gap: 60px;
 }
+
+/* Navigation link styles */
 .main-nav a {
   display: block;
   padding: 20px;
@@ -217,49 +264,64 @@ a {
   color: var(--color-text-black);
   transition: color 0.3s;
 }
+
+/* Navigation hover effects */
 .main-nav a:hover {
   color: var(--color-white);
 }
 
+/* Mobile navigation - hide on small screens */
 @media (max-width: 992px) {
   .main-nav {
-    display: none; /* Simple hide for mobile, would need a burger menu for full functionality */
+    display: none; /* Would typically be replaced with hamburger menu */
   }
 }
 
-
+/* ===== HERO SECTION ===== */
 
 .hero-section {
   background-color: var(--color-white);
   padding-top: 120px;
   padding-bottom: 120px;
 }
+
+/* Hero content container */
 .hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
 }
+
+/* Hero subtitle text */
 .hero-subtitle {
   max-width: 965px;
 }
+
+/* Profile picture container */
 .profile-picture-wrapper {
   width: 319px;
   height: 295px;
   padding: 10px;
 }
+
+/* Profile image styling */
 .profile-picture {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border: 20px solid #e7e5fa;
-  /* The wavy border effect is complex and would typically be an SVG mask or border-image. This is a simplification. */
+  /* Note: Wavy border effect would typically use SVG mask or border-image */
 }
+
+/* Hero action buttons container */
 .hero-buttons {
   display: flex;
   gap: 55px;
   margin-top: 20px;
 }
+
+/* Mobile hero section adjustments */
 @media (max-width: 768px) {
   .hero-buttons {
     flex-direction: column;
@@ -271,32 +333,42 @@ a {
   }
 }
 
-
+/* ===== ABOUT SECTION ===== */
 
 .about-section {
   background-color: var(--color-primary-light);
 }
+
+/* Two-column layout for about content */
 .about-content {
   display: flex;
   gap: 60px;
   align-items: flex-start;
 }
+
+/* Skills and journey cards */
 .skills-card, .journey-card {
   flex: 1;
-  min-width: 0;
+  min-width: 0; /* Prevents flex items from overflowing */
 }
+
+/* Skills card styling */
 .skills-card {
   background-color: var(--color-white);
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0px 10px 25px 0px rgba(107, 115, 255, 0.15);
 }
+
+/* Card heading styles */
 .skills-card h3, .journey-card h3 {
   font-size: 18.7px;
   font-weight: 600;
   color: var(--color-text-dark);
   margin-bottom: 15px;
 }
+
+/* Card paragraph styles */
 .skills-card p, .journey-card p {
   font-size: 16px;
   line-height: 1.7;
@@ -304,64 +376,87 @@ a {
   color: var(--color-text-dark);
   margin-bottom: 25px;
 }
+
+/* Journey card specific heading */
 .journey-card h3 {
     font-size: 32px;
     font-weight: 700;
     color: var(--color-text-black);
 }
+
 .journey-card p {
     color: var(--color-text-black);
 }
+
+/* Skills list container */
 .skills-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
+
+/* Skill header with name and percentage */
 .skill-header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 8px;
   font-size: 16px;
 }
+
+/* Skill name styling */
 .skill-header span:first-child {
   font-weight: 500;
   color: var(--color-text-dark);
 }
+
+/* Skill percentage styling */
 .skill-header span:last-child {
   font-weight: 600;
   color: #4a54e6;
 }
+
+/* Progress bar container */
 .progress-bar {
   height: 10px;
   background-color: #e2e8f0;
   border-radius: 10px;
   overflow: hidden;
 }
+
+/* Progress bar fill with gradient */
 .progress-bar-fill {
   height: 100%;
   background: var(--gradient-primary);
   border-radius: 10px;
 }
+
+/* Journey card padding */
 .journey-card {
   padding: 20px;
 }
+
+/* Mobile about section layout */
 @media (max-width: 992px) {
   .about-content {
     flex-direction: column;
   }
 }
 
-
+/* ===== PORTFOLIO SECTION ===== */
 
 .portfolio-section {
   background-color: var(--color-white);
 }
+
+/* Projects grid layout */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 40px;
   margin-bottom: 60px;
 }
+
+/* Individual project card */
 .project-card {
   background-color: var(--color-white);
   border-radius: 16px;
@@ -370,18 +465,26 @@ a {
   flex-direction: column;
   transition: transform 0.3s ease;
 }
+
+/* Card hover effect */
 .project-card:hover {
   transform: translateY(-10px);
 }
+
+/* Project image container */
 .project-image-container {
   position: relative;
   height: 220px;
 }
+
+/* Project image styling */
 .project-image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
+/* Overlay that appears on hover */
 .project-overlay {
   position: absolute;
   top: 0;
@@ -395,9 +498,13 @@ a {
   opacity: 0;
   transition: opacity 0.4s ease;
 }
+
+/* Show overlay on card hover */
 .project-card:hover .project-overlay {
   opacity: 1;
 }
+
+/* Overlay link button */
 .overlay-link {
   background: var(--gradient-primary);
   color: var(--color-white);
@@ -409,43 +516,59 @@ a {
   align-items: center;
   gap: 8px;
 }
+
+/* Project information area */
 .project-info {
   padding: 25px;
 }
+
+/* Project title */
 .project-info h3 {
   font-size: 20.8px;
   font-weight: 600;
   color: var(--color-text-dark);
   margin-bottom: 10px;
 }
+
+/* Project description */
 .project-info p {
   font-size: 15.2px;
   color: var(--color-text-light);
   text-align: left;
   line-height: 1.7;
 }
+
+/* Portfolio call-to-action */
 .portfolio-cta {
   text-align: center;
 }
 
-
+/* ===== CONTACT SECTION ===== */
 
 .contact-section {
   background-color: var(--color-primary-light);
 }
+
+/* Two-column contact layout */
 .contact-content-wrapper {
   display: flex;
   gap: 60px;
   align-items: flex-start;
 }
+
+/* Contact info and form columns */
 .contact-info-column, .contact-form-column {
   flex: 1;
 }
+
+/* Contact info cards container */
 .contact-info-column {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
+
+/* Individual contact card */
 .contact-card {
   background-color: var(--color-white);
   border-radius: 16px;
@@ -455,6 +578,8 @@ a {
   gap: 20px;
   box-shadow: 0px 10px 25px 0px rgba(107, 115, 255, 0.15);
 }
+
+/* Contact icon container */
 .contact-icon {
   width: 60px;
   height: 60px;
@@ -467,28 +592,37 @@ a {
   color: var(--color-white);
   font-size: 24px;
 }
+
+/* Contact text styling */
 .contact-text h4 {
   font-size: 18.7px;
   font-weight: 600;
   color: var(--color-text-dark);
   margin-bottom: 4px;
 }
+
 .contact-text p {
   font-size: 16px;
   color: var(--color-text-light);
   text-align: left;
 }
+
+/* Contact form container */
 .contact-form-column {
   background-color: var(--color-white);
   border-radius: 16px;
   padding: 40px;
   box-shadow: 0px 10px 25px 0px rgba(107, 115, 255, 0.15);
 }
+
+/* Form layout */
 .contact-form {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
+
+/* Form input fields */
 .contact-form input, .contact-form textarea {
   width: 100%;
   padding: 16px 21px;
@@ -498,10 +632,14 @@ a {
   font-size: 16px;
   color: #757575;
 }
+
+/* Form field focus states */
 .contact-form input:focus, .contact-form textarea:focus {
   outline: none;
   border-color: var(--color-primary);
 }
+
+/* Submit button styling */
 .btn-submit {
   background: linear-gradient(174deg, #4a54e6 0%, #9d6bff 533.99%);
   color: var(--color-white);
@@ -518,13 +656,18 @@ a {
   gap: 10px;
   transition: all 0.3s ease;
 }
+
+/* Submit button hover effect */
 .btn-submit:hover {
   box-shadow: 0px 10px 25px 0px rgba(107, 115, 255, 0.25);
 }
+
+/* Back to home link */
 .back-to-home {
     text-align: center;
     margin-top: 60px;
 }
+
 .back-to-home a {
     font-family: 'Poppins', sans-serif;
     font-size: 36px;
@@ -535,51 +678,65 @@ a {
     border-radius: 8px;
     transition: all 0.3s ease;
 }
+
 .back-to-home a:hover {
     background: var(--color-primary);
     color: var(--color-white);
     border-color: var(--color-primary);
 }
 
+/* Mobile contact layout */
 @media (max-width: 992px) {
   .contact-content-wrapper {
     flex-direction: column;
   }
 }
 
-
+/* ===== FOOTER ===== */
 
 .site-footer {
   background: linear-gradient(168deg, #3a44d6 0%, #9d6bff 283.67%);
   color: var(--color-white);
   padding: 60px 0 30px;
 }
+
+/* Footer container layout */
 .footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
 }
+
+/* Footer branding */
 .footer-brand {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
+/* Footer logo background */
 .footer-logo-bg {
   width: 40px;
   height: 40px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
 }
+
+/* Footer brand name */
 .footer-brand-name {
   font-family: var(--font-body);
   font-weight: 700;
   font-size: 28.8px;
 }
+
+/* Social media links container */
 .social-links {
   display: flex;
   gap: 20px;
 }
+
+/* Social media icon links */
 .social-links a {
   width: 50px;
   height: 50px;
@@ -592,17 +749,21 @@ a {
   font-size: 19.2px;
   transition: background-color 0.3s ease;
 }
+
+/* Social link hover effect */
 .social-links a:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-
+/* Footer bottom section */
 .footer-bottom {
   width: 100%;
   padding-top: 30px;
   margin-top: 30px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+/* Copyright text */
 .footer-bottom p {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.7);
