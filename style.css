@@ -17,7 +17,7 @@
   
   /* Gradient definitions */
   --gradient-primary: linear-gradient(90deg, #4a54e6 0%, #9d6bff 100%);
-  --gradient-heading: linear-gradient(53deg, #c089fb 0%, #6b4099 62.39%, #000000 124.78%);
+  --gradient-heading: linear-gradient(53deg, hsl(268, 30%, 8%) 0%, #a259f0 62.39%, #000000 124.78%);
   
   /* Typography */
   --font-heading: 'Poppins', sans-serif;
@@ -717,16 +717,16 @@ a {
 
 /* Footer logo background */
 .footer-logo-bg {
-  width: 40px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.461);
+  border-radius: 1000px;
 }
 
 /* Footer brand name */
 .footer-brand-name {
-  font-family: var(--font-body);
-  font-weight: 700;
+  font-family: var(--font-logo);
+  font-weight: 200;
   font-size: 28.8px;
 }
 
