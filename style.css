@@ -303,7 +303,7 @@ p {
   font-weight: 700;
 }
 
-/* Skills Progress - First Year Feature */
+/* Skills Progress */
 .skills-list {
   display: flex;
   flex-direction: column;
@@ -607,7 +607,7 @@ p {
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
-/* First Year - Mobile First Approach */
+/* Mobile First Approach */
 @media (max-width: 768px) {
   h1, h2 {
     font-size: 48px;
