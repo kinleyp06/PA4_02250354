@@ -1,26 +1,12 @@
 /* ===== CSS VARIABLES ===== */
-/* Define color scheme and design tokens for the major project page */
 :root {
   --color-background: #e8d4fe;
   --color-card: #c089fb;
   --color-card-border: #2a0056;
   --color-text: #000000;
-  --color-bg: #e8d4fe;
-  --color-card-bg: #c089fb;
 }
 
-/* Dark mode for project page */
-[data-theme="dark"] {
-  --color-background: #2a2a2a;
-  --color-card: #3a2a4a;
-  --color-card-border: #6b4099;
-  --color-text: #ffffff;
-  --color-bg: #2a2a2a;
-  --color-card-bg: #3a2a4a;
-}
-
-/* ===== GLOBAL RESETS & BASE STYLES ===== */
-/* Reset default browser styles and set base font */
+/* ===== BASE STYLES ===== */
 * {
   box-sizing: border-box;
 }
@@ -28,258 +14,242 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: var(--color-bg);
+  background-color: var(--color-background);
   color: var(--color-text);
-  transition: background-color 0.3s, color 0.3s;
 }
 
-/* ===== MAIN PROJECT CONTAINER ===== */
-/* Container for the entire project page with max-width constraint */
+/* ===== PROJECT LAYOUT ===== */
 .project-container {
-    max-width: 1440px;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-  }
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+}
 
-/* ===== BACKGROUND DECORATIONS ===== */
-/* Container for decorative background shapes */
+/* Background shapes - First Year Design Element */
 .background-decor {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0; /* Behind all content */
-    overflow: hidden;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
 
-/* Base styles for all background shape images */
 .background-decor img {
-    position: absolute;
-    pointer-events: none; /* Prevent interaction with decorative elements */
-  }
+  position: absolute;
+  pointer-events: none;
+}
 
-/* Position individual background shapes */
 .bg-shape-1 {
-    top: -22px;
-    left: 38px;
-  }
+  top: -22px;
+  left: 38px;
+}
 
 .bg-shape-2 {
-    top: 705px;
-    left: 895px;
-  }
+  top: 705px;
+  left: 895px;
+}
 
 .bg-shape-3 {
-    top: 1480px;
-    left: 0;
-  }
+  top: 1480px;
+  left: 0;
+}
 
-/* ===== MAIN CONTENT WRAPPER ===== */
-/* Container for all page content that sits above background */
 .content-wrapper {
-    position: relative;
-    z-index: 1; /* Above background decorations */
-    padding: 40px 20px;
-  }
+  position: relative;
+  z-index: 1;
+  padding: 40px 20px;
+}
 
-/* ===== PROJECT HEADER ===== */
-/* Page header with main title */
+/* ===== TYPOGRAPHY ===== */
 .project-header {
-    text-align: center;
-    margin-bottom: 60px;
-  }
+  text-align: center;
+  margin-bottom: 60px;
+}
 
 .main-title {
-    font-weight: 900;
-    font-size: 64px;
-    line-height: 1.2;
-    margin: 0;
-    color: var(--color-text);
-  }
+  font-weight: 900;
+  font-size: 64px;
+  line-height: 1.2;
+  margin: 0;
+}
 
-/* ===== PROJECT GRID LAYOUT ===== */
-/* Main grid container for project content */
+/* ===== GRID LAYOUT ===== */
 .project-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
 
-/* Left and right column containers */
 .grid-column-left,
 .grid-column-right {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 
 /* ===== INFO CARDS ===== */
-/* Styled containers for project information with angled corners */
 .info-card {
-    background-color: var(--color-card-bg);
-    border: 5px solid var(--color-card-border);
-    border-radius: 50px 0px 50px 0px; /* Angled corner effect */
-    padding: 34px 26px;
-    font-size: 24px;
-    line-height: 1.5;
-  }
+  background-color: var(--color-card);
+  border: 5px solid var(--color-card-border);
+  border-radius: 50px 0px 50px 0px;
+  padding: 34px 26px;
+  font-size: 24px;
+  line-height: 1.5;
+}
 
 .info-card p {
-    margin: 0;
-  }
+  margin: 0;
+}
 
-/* Text size variations */
 .small-text {
-    font-size: 20px;
-  }
+  font-size: 20px;
+}
 
-/* Card title sizes */
 .card-title-large {
-    font-size: 24px;
-    font-weight: 700;
-    margin: 0 0 10px 0;
-  }
-  
-.card-title-small {
-    font-size: 20px;
-    margin: 0 0 10px 0;
-  }
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
 
-/* ===== TYPOGRAPHY UTILITY CLASSES ===== */
-/* Font weight helper classes */
+.card-title-small {
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+/* Utility classes */
 .font-bold { font-weight: 700; }
 .font-medium { font-weight: 500; }
 .font-semibold { font-weight: 600; }
 
-/* ===== WORKSHOP PHOTO ===== */
-/* Styled image container with border */
+/* ===== IMAGES ===== */
 .workshop-photo {
-    width: 100%;
-    max-width: 556px;
-    height: auto;
-    border: 4px solid var(--color-text);
-    border-radius: 50px;
-    object-fit: cover;
-    align-self: flex-start;
-  }
+  width: 100%;
+  max-width: 556px;
+  height: auto;
+  border: 4px solid var(--color-text);
+  border-radius: 50px;
+  object-fit: cover;
+  align-self: flex-start;
+}
 
 /* ===== APP GALLERY ===== */
-/* Container for app screenshot mosaic layout */
+/*Mosaic layout for desktop */
 .app-gallery {
-    position: relative;
-    width: 100%;
-    max-width: 529px;
-    height: 448px;
-    margin: 0 auto;
-  }
+  position: relative;
+  width: 100%;
+  max-width: 529px;
+  height: 448px;
+  margin: 0 auto;
+}
 
-/* Individual app screenshots - positioned absolutely for desktop mosaic */
 .app-gallery img {
-    position: absolute;
-    max-width: 100px;
-    height: auto;
-    display: none; /* Hidden by default, shown on desktop via media queries */
-  }
+  position: absolute;
+  max-width: 100px;
+  height: auto;
+  display: none;
+}
 
-/* ===== PROJECT FOOTER ===== */
-/* Footer section with back navigation */
+/* ===== FOOTER ===== */
 .project-footer {
-    text-align: center;
-    margin-top: 80px;
-  }
+  text-align: center;
+  margin-top: 80px;
+}
 
 .back-link {
-    display: inline-block;
-    border: 1px solid var(--color-text);
-    padding: 10px 20px;
-    font-size: 24px;
-    font-weight: 500;
-    color: var(--color-text);
-    text-decoration: none;
-    transition: background-color 0.3s, color 0.3s;
-    min-height: 44px;
-    display: inline-flex;
-    align-items: center;
-  }
+  display: inline-block;
+  border: 1px solid var(--color-text);
+  padding: 10px 20px;
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
 
 .back-link:hover {
-    background-color: var(--color-text);
-    color: var(--color-bg);
-  }
+  background-color: var(--color-text);
+  color: var(--color-background);
+}
 
-/* ===== TABLET AND DESKTOP STYLES (768px and up) ===== */
+/* ===== RESPONSIVE DESIGN ===== */
+/* Tablet and Desktop */
 @media (min-width: 768px) {
-    .content-wrapper {
-      padding: 60px 80px;
-    }
-
-    /* Switch to two-column layout */
-    .project-grid {
-      grid-template-columns: 1fr 1fr;
-      gap: 0 40px;
-      align-items: start;
-    }
-    
-    /* Offset right column for visual interest */
-    .grid-column-right {
-        margin-top: 100px;
-    }
-
-    /* Show absolutely positioned app screenshots */
-    .app-gallery img {
-        display: block;
-    }
+  .content-wrapper {
+    padding: 60px 80px;
   }
 
-/* ===== LARGE DESKTOP STYLES (1200px and up) ===== */
+  .project-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0 40px;
+    align-items: start;
+  }
+  
+  .grid-column-right {
+    margin-top: 100px;
+  }
+
+  .app-gallery img {
+    display: block;
+  }
+}
+
+/* Large Desktop */
 @media (min-width: 1200px) {
-    .project-grid {
-      gap: 0 80px;
-    }
-    /* Remove offset and apply vertical translation for staggered effect */
-    .grid-column-right {
-        margin-top: 0;
-        transform: translateY(-60px);
-    }
-    .grid-column-left {
-        transform: translateY(60px);
-    }
+  .project-grid {
+    gap: 0 80px;
   }
+  
+  .grid-column-right {
+    margin-top: 0;
+    transform: translateY(-60px);
+  }
+  
+  .grid-column-left {
+    transform: translateY(60px);
+  }
+}
 
-/* ===== MOBILE-SPECIFIC STYLES (767px and down) ===== */
+/* Mobile Optimization */
 @media (max-width: 767px) {
-    /* Adjust typography for smaller screens */
-    .main-title {
-      font-size: 48px;
-    }
-    .info-card {
-      font-size: 18px;
-    }
-    .small-text, .card-title-small {
-      font-size: 16px;
-    }
-    .card-title-large {
-        font-size: 20px;
-    }
-    .back-link {
-      font-size: 18px;
-    }
-    
-    /* Convert app gallery from absolute positioning to grid layout */
-    .app-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      gap: 15px;
-      position: static;
-      height: auto;
-      width: 100%;
-    }
-    .app-gallery img {
-      position: static;
-      display: block;
-      width: 100%;
-      max-width: none;
-    }
+  .main-title {
+    font-size: 48px;
   }
+  
+  .info-card {
+    font-size: 18px;
+  }
+  
+  .small-text, .card-title-small {
+    font-size: 16px;
+  }
+  
+  .card-title-large {
+    font-size: 20px;
+  }
+  
+  .back-link {
+    font-size: 18px;
+  }
+  
+  /* Convert mosaic to grid on mobile */
+  .app-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 15px;
+    position: static;
+    height: auto;
+    width: 100%;
+  }
+  
+  .app-gallery img {
+    position: static;
+    display: block;
+    width: 100%;
+    max-width: none;
+  }
+}
