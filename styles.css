@@ -1,4 +1,5 @@
 /* ===== CSS VARIABLES ===== */
+/* First Year Project - Color scheme for project page */
 :root {
   --color-background: #e8d4fe;
   --color-card: #c089fb;
@@ -90,6 +91,7 @@ body {
 }
 
 /* ===== INFO CARDS ===== */
+/* First Year - Angled corner design */
 .info-card {
   background-color: var(--color-card);
   border: 5px solid var(--color-card-border);
@@ -135,7 +137,7 @@ body {
 }
 
 /* ===== APP GALLERY ===== */
-/*Mosaic layout for desktop */
+/* First Year - Mosaic layout for desktop */
 .app-gallery {
   position: relative;
   width: 100%;
@@ -164,7 +166,7 @@ body {
   font-size: 24px;
   font-weight: 500;
   color: var(--color-text);
-  text-decoration: none;
+  text-decoration: none; /* No underline */
   transition: background-color 0.3s, color 0.3s;
   min-height: 44px;
   display: inline-flex;
@@ -174,10 +176,11 @@ body {
 .back-link:hover {
   background-color: var(--color-text);
   color: var(--color-background);
+  text-decoration: none; /* No underline on hover */
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
-/* Tablet and Desktop */
+/* First Year - Tablet and Desktop */
 @media (min-width: 768px) {
   .content-wrapper {
     padding: 60px 80px;
@@ -214,7 +217,7 @@ body {
   }
 }
 
-/* Mobile Optimization */
+/* First Year - Mobile Optimization */
 @media (max-width: 767px) {
   .main-title {
     font-size: 48px;
