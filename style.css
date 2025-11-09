@@ -1,5 +1,5 @@
 /* ===== CSS VARIABLES ===== */
-
+/* First Year Project - Color scheme and design tokens */
 :root {
   --color-primary: #c589fb;
   --color-primary-dark: #6b4099;
@@ -101,6 +101,7 @@ p {
   border: 1px solid var(--color-text-black);
   transition: all 0.3s ease;
   min-height: 44px;
+  text-decoration: none; /* No underline */
 }
 
 .btn-primary {
@@ -132,7 +133,7 @@ p {
   align-items: center;
 }
 
-/* Logo */
+/* Logo - First Year Design */
 .logo {
   position: relative;
   width: 80px;
@@ -140,6 +141,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-decoration: none; /* No underline */
 }
 
 .logo-bg {
@@ -159,7 +161,7 @@ p {
   color: var(--color-white);
 }
 
-/* Navigation */
+/* Navigation - No Underlines */
 .main-nav {
   background-color: var(--color-primary);
   border-radius: 40px;
@@ -182,10 +184,12 @@ p {
   min-height: 44px;
   display: flex;
   align-items: center;
+  text-decoration: none; /* No underline */
 }
 
 .main-nav a:hover {
   color: var(--color-white);
+  text-decoration: none; /* No underline on hover */
 }
 
 /* ===== HERO SECTION ===== */
@@ -265,7 +269,7 @@ p {
   font-weight: 700;
 }
 
-/* Skills Progress */
+/* Skills Progress - First Year Feature */
 .skills-list {
   display: flex;
   flex-direction: column;
@@ -361,6 +365,7 @@ p {
   align-items: center;
   gap: 8px;
   min-height: 44px;
+  text-decoration: none; /* No underline */
 }
 
 .project-info {
@@ -475,6 +480,7 @@ p {
   align-items: center;
   gap: 10px;
   min-height: 44px;
+  text-decoration: none; /* No underline */
 }
 
 .back-to-home {
@@ -493,11 +499,13 @@ p {
   min-height: 44px;
   display: inline-flex;
   align-items: center;
+  text-decoration: none; /* No underline */
 }
 
 .back-to-home a:hover {
   background: var(--color-primary);
   color: var(--color-white);
+  text-decoration: none; /* No underline on hover */
 }
 
 /* ===== FOOTER ===== */
@@ -518,6 +526,7 @@ p {
   display: flex;
   align-items: center;
   gap: 10px;
+  text-decoration: none; /* No underline */
 }
 
 .footer-logo-bg {
@@ -550,10 +559,12 @@ p {
   font-size: 19.2px;
   min-height: 44px;
   min-width: 44px;
+  text-decoration: none; /* No underline */
 }
 
 .social-links a:hover {
   background-color: rgba(255, 255, 255, 0.3);
+  text-decoration: none; /* No underline on hover */
 }
 
 .footer-bottom p {
@@ -562,7 +573,7 @@ p {
 }
 
 /* ===== RESPONSIVE DESIGN ===== */
-/* Mobile First Approach */
+/* First Year - Mobile First Approach */
 @media (max-width: 768px) {
   h1, h2 {
     font-size: 48px;

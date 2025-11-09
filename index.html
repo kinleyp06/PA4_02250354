@@ -5,7 +5,270 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
 
-     <!-- Google Fonts imports for typography -->
+     <!-- Google Fonts imports for typography<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kinley Pem - First Year Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Poppins:wght@300;400;600;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header - First Year Portfolio -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#home" class="logo">
+                <span class="logo-bg"></span>
+                <span class="logo-text">KP</span>
+            </a>
+
+            <!-- Navigation -->
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Download CV -->
+            <a href="#" class="btn btn-outline">Download CV</a>
+        </div>
+    </header>
+
+    <!-- Hero Section - First Year Introduction -->
+    <section id="home" class="hero-section">
+        <div class="container hero-container">
+            <h1>Hi, I'm Kinley Pem</h1>
+            <p class="hero-subtitle">First-year Software Engineering student at College of Science and Technology, Bhutan. Passionate about creating technology that makes a difference.</p>
+
+            <!-- Profile Photo -->
+            <div class="profile-picture-wrapper">
+                <img src="profile.jpg" alt="Kinley Pem - First Year Student" class="profile-picture" loading="lazy">
+            </div>
+            
+            <p class="hero-subtitle">I believe in the power of software to solve real-world challenges. My journey began with curiosity and has led to creating award-winning projects while building strong technical foundations.</p>
+            
+            <!-- Call to Action -->
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn btn-primary">View My Projects</a>
+                <a href="#about" class="btn btn-primary">Get to Know Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section - First Year Journey -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p class="section-subtitle">First-year Software Engineering student passionate about technology and design</p>
+            
+            <div class="about-content">
+                <!-- Skills Card -->
+                <div class="skills-card">
+                    <h3>My Technical Journey</h3>
+                    <p>Building strong foundations in software engineering through coursework and practical projects.</p>
+                    
+                    <!-- Skills Progress - First Year Learning -->
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-header"><span>Python</span><span>70%</span></div>
+                            <div class="progress-bar"><div class="progress-bar-fill" style="width: 70%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header"><span>HTML/CSS</span><span>80%</span></div>
+                            <div class="progress-bar"><div class="progress-bar-fill" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header"><span>UI/UX Design</span><span>69%</span></div>
+                            <div class="progress-bar"><div class="progress-bar-fill" style="width: 69%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-header"><span>Web Design</span><span>75%</span></div>
+                            <div class="progress-bar"><div class="progress-bar-fill" style="width: 75%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Journey Card -->
+                <div class="journey-card">
+                    <h3>My First Year Journey</h3>
+                    <p>As a first-year Software Engineering student at CST, I'm exploring the vast world of technology while building practical skills through projects and collaborations.</p>
+                    <p>I'm passionate about transforming ideas into digital reality through coding and design. Each project teaches me valuable lessons about user experience, problem-solving, and technical implementation.</p>
+                    <p>My current focus is on mastering core programming concepts while developing responsive web applications that provide great user experiences across all devices.</p>
+                    <a href="#" class="btn btn-primary">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section - First Year Projects -->
+    <section id="portfolio" class="portfolio-section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <p class="section-subtitle" style="font-size: 20px; max-width: 650px;">First-year projects showcasing my growth in development and design</p>
+            
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 1 - Food Delivery -->
+                <div class="project-card" style="box-shadow: 10px 10px 10px 5px #ff9d6b;">
+                    <div class="project-image-container">
+                        <img src="Deliveryweb.png" alt="Food Delivery Service - First Year Project" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#" class="overlay-link">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Food Delivery Service</h3>
+                        <p>First-year project: Responsive website for food delivery with intuitive user interface and mobile-friendly design.</p>
+                    </div>
+                </div>
+                
+                <!-- Project 2 - CST Website -->
+                <div class="project-card" style="box-shadow: 10px 10px 10px 0px rgba(60, 84, 239, 0.59);">
+                    <div class="project-image-container">
+                        <img src="cstweb.png" alt="CST Website Replication - Learning Project" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#" class="overlay-link">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>CST Website Replication</h3>
+                        <p>First-year learning project: Replicated college website to practice HTML/CSS skills and responsive design principles.</p>
+                    </div>
+                </div>
+                
+                <!-- Project 3 - Zoom Website -->
+                <div class="project-card" style="box-shadow: 10px 10px 10px 5px #c2dbfa;">
+                    <div class="project-image-container">
+                        <img src="Zoomweb.png" alt="Zoom Website Replication - First Year" loading="lazy">
+                        <div class="project-overlay">
+                            <a href="#" class="overlay-link">
+                                <i class="fas fa-external-link-alt"></i> View Project
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Zoom Website Replication</h3>
+                        <p>First-year design exercise: Recreated Zoom's interface to learn modern web design patterns and responsive layouts.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Major Project CTA -->
+            <div class="portfolio-cta">
+                <a href="index1.html" class="btn btn-secondary">View My Major Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section - First Year Portfolio -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="section-subtitle" style="font-weight: 300;">Connect with a passionate first-year developer</p>
+            
+            <div class="contact-content-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info-column">
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>Phuentsholing, Bhutan</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>kinleypem06@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>+975 12345678</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+                        <div class="contact-text">
+                            <h4>Instagram</h4>
+                            <p>@kpee.0</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form-column">
+                    <form class="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Back to Home -->
+            <div class="back-to-home">
+                <a href="#home">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer - First Year Portfolio -->
+    <footer id="footer" class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo-bg"></div>
+                <span class="footer-brand-name">KinleyPem</span>
+            </div>
+
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="mailto:kinleypem06@gmail.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" aria-label="Github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>© 2024 Kinley Pem - First Year Portfolio. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>  
+</body>
+</html> -->
     <link href="https://fonts.googleapis.com/css?family=Poppins|Inter&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
