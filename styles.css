@@ -5,6 +5,18 @@
   --color-card: #c089fb;
   --color-card-border: #2a0056;
   --color-text: #000000;
+  --color-bg: #e8d4fe;
+  --color-card-bg: #c089fb;
+}
+
+/* Dark mode for project page */
+[data-theme="dark"] {
+  --color-background: #2a2a2a;
+  --color-card: #3a2a4a;
+  --color-card-border: #6b4099;
+  --color-text: #ffffff;
+  --color-bg: #2a2a2a;
+  --color-card-bg: #3a2a4a;
 }
 
 /* ===== GLOBAL RESETS & BASE STYLES ===== */
@@ -16,8 +28,9 @@
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: var(--color-background);
+  background-color: var(--color-bg);
   color: var(--color-text);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 /* ===== MAIN PROJECT CONTAINER ===== */
@@ -105,7 +118,7 @@ body {
 /* ===== INFO CARDS ===== */
 /* Styled containers for project information with angled corners */
 .info-card {
-    background-color: var(--color-card);
+    background-color: var(--color-card-bg);
     border: 5px solid var(--color-card-border);
     border-radius: 50px 0px 50px 0px; /* Angled corner effect */
     padding: 34px 26px;
@@ -186,11 +199,14 @@ body {
     color: var(--color-text);
     text-decoration: none;
     transition: background-color 0.3s, color 0.3s;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
   }
 
 .back-link:hover {
     background-color: var(--color-text);
-    color: white;
+    color: var(--color-bg);
   }
 
 /* ===== TABLET AND DESKTOP STYLES (768px and up) ===== */
