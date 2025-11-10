@@ -1,5 +1,5 @@
 /* ===== CSS VARIABLES ===== */
-/* First Year Project - Color scheme for project page */
+/* Color scheme for project page */
 :root {
   --color-background: #e8d4fe;
   --color-card: #c089fb;
@@ -7,7 +7,7 @@
   --color-text: #000000;
 }
 
-/* ===== BASE STYLES ===== */
+/* BASE STYLES */
 * {
   box-sizing: border-box;
 }
@@ -19,14 +19,14 @@ body {
   color: var(--color-text);
 }
 
-/* ===== PROJECT LAYOUT ===== */
+/* PROJECT LAYOUT */
 .project-container {
   max-width: 1440px;
   margin: 0 auto;
   position: relative;
 }
 
-/* Background shapes - First Year Design Element */
+/* Background shapes */
 .background-decor {
   position: absolute;
   top: 0;
@@ -63,7 +63,7 @@ body {
   padding: 40px 20px;
 }
 
-/* ===== TYPOGRAPHY ===== */
+/* TYPOGRAPHY */
 .project-header {
   text-align: center;
   margin-bottom: 60px;
@@ -76,7 +76,7 @@ body {
   margin: 0;
 }
 
-/* ===== GRID LAYOUT ===== */
+/* GRID LAYOUT */
 .project-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -90,8 +90,8 @@ body {
   gap: 40px;
 }
 
-/* ===== INFO CARDS ===== */
-/* First Year - Angled corner design */
+/* INFO CARDS */
+/* Angled corner design */
 .info-card {
   background-color: var(--color-card);
   border: 5px solid var(--color-card-border);
@@ -125,7 +125,7 @@ body {
 .font-medium { font-weight: 500; }
 .font-semibold { font-weight: 600; }
 
-/* ===== IMAGES ===== */
+/* IMAGES */
 .workshop-photo {
   width: 100%;
   max-width: 556px;
@@ -136,8 +136,8 @@ body {
   align-self: flex-start;
 }
 
-/* ===== APP GALLERY ===== */
-/* First Year - Mosaic layout for desktop */
+/* APP GALLERY */
+/* Mosaic layout for desktop */
 .app-gallery {
   position: relative;
   width: 100%;
@@ -153,7 +153,7 @@ body {
   display: none;
 }
 
-/* ===== FOOTER ===== */
+/*  FOOTER  */
 .project-footer {
   text-align: center;
   margin-top: 80px;
@@ -166,7 +166,7 @@ body {
   font-size: 24px;
   font-weight: 500;
   color: var(--color-text);
-  text-decoration: none; /* No underline */
+  text-decoration: none; 
   transition: background-color 0.3s, color 0.3s;
   min-height: 44px;
   display: inline-flex;
@@ -176,11 +176,10 @@ body {
 .back-link:hover {
   background-color: var(--color-text);
   color: var(--color-background);
-  text-decoration: none; /* No underline on hover */
-}
+  text-decoration: none; 
 
-/* ===== RESPONSIVE DESIGN ===== */
-/* First Year - Tablet and Desktop */
+/* RESPONSIVE DESIGN */
+/* Tablet and Desktop */
 @media (min-width: 768px) {
   .content-wrapper {
     padding: 60px 80px;
@@ -217,7 +216,7 @@ body {
   }
 }
 
-/* First Year - Mobile Optimization */
+/* Mobile Optimization */
 @media (max-width: 767px) {
   .main-title {
     font-size: 48px;
