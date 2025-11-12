@@ -196,7 +196,7 @@ body {
   }
 
   .app-gallery img {
-    display:flexbox;
+    display:none;
   }
 }
 
@@ -213,9 +213,6 @@ body {
   
   .grid-column-left {
     transform: translateY(60px);
-  }
- .app-gallery img {
-    display:flexbox;
   }
 }
 
