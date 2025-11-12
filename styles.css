@@ -138,7 +138,7 @@ body {
 
 /* APP GALLERY */
 /* Mosaic layout for desktop */
-.app-gallery {
+.grid-column-right {
   position: relative;
   width: 100%;
   max-width: 529px;
@@ -146,11 +146,11 @@ body {
   margin: 0 auto;
 }
 
-.app-gallery img {
+.app-gallery {
   position: absolute;
   max-width: 100px;
   height: auto;
-  display:none;
+  display:flexbox;
 }
 
 /*  FOOTER  */
@@ -195,7 +195,7 @@ body {
     margin-top: 100px;
   }
 
-  .app-gallery img {
+  .app-gallery {
     display:flexbox;
   }
 }
@@ -239,7 +239,7 @@ body {
   }
   
   /* Convert mosaic to grid on mobile */
-  .app-gallery {
+  .grid-column-right {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 15px;
@@ -248,7 +248,7 @@ body {
     width: 100%;
   }
   
-  .app-gallery img {
+  .app-gallery {
     position: static;
     display: block;
     width: 100%;
