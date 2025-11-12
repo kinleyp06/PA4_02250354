@@ -207,6 +207,7 @@ body {
   border-radius: 50px;
   object-fit: cover;
   align-self: flex-start;
+  display: flexbox;
 }
 
 }
