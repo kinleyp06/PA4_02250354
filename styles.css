@@ -196,9 +196,8 @@ body {
   }
 
   .app-gallery img {
-    display:flex;
+    display:flexbox;
   }
-
 }
 
 /* Large Desktop */
@@ -214,6 +213,9 @@ body {
   
   .grid-column-left {
     transform: translateY(60px);
+  }
+ .app-gallery img {
+    display:flexbox;
   }
 }
 
