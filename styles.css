@@ -195,14 +195,8 @@ body {
     margin-top: 100px;
   }
 
-.workshop-photo img {
-  position: absolute;
-  max-width: 100px;
-  height: auto;
-  display:flexbox;
-}
   .app-gallery img {
-    display:flexbox;
+    display:flex;
   }
 
 }
