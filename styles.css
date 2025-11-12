@@ -150,7 +150,7 @@ body {
   position: absolute;
   max-width: 100px;
   height: auto;
-  display:flexbox;
+  display:none;
 }
 
 /*  FOOTER  */
@@ -196,7 +196,7 @@ body {
   }
 
   .app-gallery img {
-    display:none;
+    display:flexbox;
   }
 }
 
